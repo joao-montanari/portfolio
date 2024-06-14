@@ -1,12 +1,10 @@
 import React from "react";
 
-import 'style.sass';
+import './style.sass';
 
 const AboutMe = () => {
     return (
-        <div>
-
-        </div>
+        <div></div>
     );
 }
 
