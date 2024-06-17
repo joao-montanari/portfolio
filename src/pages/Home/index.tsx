@@ -8,7 +8,7 @@ const Home = () => {
             <div id="home-page-content">
                 <div id="home-page-content-infos">
                     <h3>HI THERE!</h3>
-                    <h1>I´M JOÃO MONTANARI</h1>
+                    <h1>I´M JOÃO</h1>
                     <label>SYSTEM DEVELOPMENT / FRONT END</label>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 

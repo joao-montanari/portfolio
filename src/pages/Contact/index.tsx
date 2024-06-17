@@ -15,6 +15,15 @@ const Contact = () => {
             <div id="contact-page-content">
                 <div id="contact-page-card">
                     <LinkedIn/>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div id="contact-page-card">
+                    <GitHub/>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                 </div>
             </div>
         </div>
