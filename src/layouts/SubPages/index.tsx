@@ -11,6 +11,7 @@ const referenceTitle = [
     { path: "/about-me", title: "ABOUT ME" },
     { path: "/resume", title: "RESUME" },
     { path: "/projects", title: "PROJECTS" },
+    { path: "/technologies", title: "TECHNOLOGIES" },
     { path: "/contact", title: "CONTACT" },
 ]
 

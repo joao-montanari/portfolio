@@ -9,7 +9,7 @@ const options = [
     { path: "/about-me", icon: <Person/>, show: true },
     { path: "/resume", icon: <BusinessCenter/>, show: true },
     { path: "/projects", icon: <Tv/>, show: true },
-    { path: "/", icon: <Campaign/>, show: true },
+    { path: "/technologies", icon: <Campaign/>, show: true },
     { path: "/contact", icon: <Email/>, show: true },
 ]
 

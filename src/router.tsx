@@ -5,6 +5,7 @@ import Resume from "@Pages/Resume";
 import Contact from "@Pages/Contact";
 import Projects from "@Pages/Projects";
 import AboutMe from "@Pages/AboutMe";
+import Technologies from "@Pages/Technologies";
 
 import Default from "@Layouts/Default";
 import SubPages from "@Layouts/SubPages";
@@ -33,6 +34,10 @@ const routers = createHashRouter([
                     {
                         path: "/projects",
                         element: <Projects/>
+                    },
+                    {
+                        path: "/technologies",
+                        element: <Technologies/>
                     },
                     {
                         path: "/about-me",
