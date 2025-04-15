@@ -1,0 +1,61 @@
+@use '../../styles/variables'
+
+.custom-button-component
+    border: 0px
+    cursor: pointer
+    border-radius: 16px
+    transition: 0.3s
+
+
+
+.custom-button-component--small
+    padding: 10px 12px
+    font-size: 12px
+
+.custom-button-component--medium
+    padding: 14px 16px
+    font-size: 16px
+
+.custom-button-component--larger
+    padding: 18px 20px
+    font-size: 20px
+
+.custom-button-component-primary
+    background-color: variables.$port-color-grey-second
+    color: variables.$port-color-text-white
+
+    &:hover
+        color: variables.$port-color-grey-second
+        background-color: variables.$port-color-text-white
+
+
+    
+.custom-button-component-secondary
+    background-color: transparent
+    color: variables.$port-color-grey-light
+    padding-inline: 5px
+
+    &:hover
+        color: variables.$port-color-text-white
+
+
+
+.custom-button-component-tertiary
+    background-color: transparent
+    color: variables.$port-color-blue-primary
+    background-color: transparentize(variables.$port-color-blue-primary, 0.85)
+
+    &:hover
+        color: variables.$port-color-text-white
+        background-color: variables.$port-color-blue-primary
+
+
+
+.custom-button-component-fourth
+    background-color: hsla(0, 0%, 64%, .1)
+    color: variables.$port-color-grey-light
+    padding-inline: 60px
+
+    &:hover
+        color: variables.$port-color-grey-first
+        background-color: rgb(163 163 163 / 1)

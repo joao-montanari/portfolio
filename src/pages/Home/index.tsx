@@ -1,7 +1,14 @@
+import Button from '@Components/Button';
+import './style.sass';
 
 const HomePage = () => {
     return (
-        <div>Hello world!!!</div>
+        <div>
+            <Button
+                label='Home'
+                onClick={() => {}}
+            />
+        </div>
     )
 }
 
