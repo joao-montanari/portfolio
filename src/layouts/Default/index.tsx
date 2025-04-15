@@ -1,8 +1,10 @@
 import { Outlet } from "react-router-dom";
 
+import './styles.sass';
+
 const DefaultLayout = () => {
     return (
-        <div>
+        <div className="default-layout-container">
             <Outlet/>
         </div>
     )
