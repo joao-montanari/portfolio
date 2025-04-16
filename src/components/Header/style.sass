@@ -1,0 +1,34 @@
+@use '../../styles/variables'
+    
+.custom-header-component
+    width: 100%
+    height: 60px
+    display: flex
+    justify-content: space-between
+    padding: 0px 30px
+    backdrop-filter: blur(4px)
+
+    .left-side-header
+        display: flex
+        align-items: center
+
+        .logo-header
+            width: 35px
+            height: 35px
+
+    .right-side-header
+        display: flex
+        align-items: center
+
+        .select-lang-header
+            color: variables.$port-color-grey-light
+            margin-left: 20px
+            cursor: pointer
+            transition: 0.3s
+
+            &:hover
+                color: variables.$port-color-text-white
+
+.custom-header-component-primary
+    border: 1px solid variables.$port-color-grey-second
+    border-radius: 12px
