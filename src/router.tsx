@@ -1,13 +1,15 @@
 import { createHashRouter } from "react-router-dom";
 
-import HomePage from "@Pages/Home";
-
 import DefaultLayout from "@Layouts/Default";
+
+import HomePage from "@Pages/Home";
+import PageNotFound from "@Pages/PageNotFound";
 
 const routers = createHashRouter([
     {
         path: "",
         element: <DefaultLayout/>,
+        errorElement: <PageNotFound/>,
         children: [
             {
                 path: "/",
