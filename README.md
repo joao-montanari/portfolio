@@ -79,21 +79,14 @@ Ele foi pensado para ser uma vitrine do meu trabalho, com uma interface moderna 
 
 
 
-### 🛠️ Built With
+## 🛠️ Built With
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
-- ⚡ [Vite](https://vitejs.dev/) – Ferramenta de build rápida para front-end moderno.
-- ⚛️ [React](https://reactjs.org/) – Biblioteca para criação de interfaces.
-- 🎨 [Sass](https://sass-lang.com/) – Pré-processador CSS para estilos mais organizados.
-- 🧭 [React Router DOM](https://reactrouter.com/) – Navegação entre páginas.
-- 📚 [Storybook](https://storybook.js.org/) – Documentação de componentes de forma visual.
-- ✏️ [MUI](https://mui.com/material-ui/material-icons/) – Biblioteca para os ícones usados no projeto.
-
-* [![Sass][Sass]][Sass-url]
-* [![React][React.js]][React-url]
-* [![StoryBook][StoryBook]][story-book]
-* [![Vite][Vite]][vite-link]
+* [![Sass][Sass]][Sass-url] – Pré-processador CSS para estilos mais organizados.
+* [![React][React.js]][React-url] – Biblioteca para criação de interfaces.
+* [![StoryBook][StoryBook]][story-book] – Documentação de componentes de forma visual.
+* [![Vite][Vite]][vite-link] – Ferramenta de build rápida para front-end moderno.
 
 <!-- * [![Next][Next.js]][Next-url] -->
 <!-- * [![Vue][Vue.js]][Vue-url]
@@ -108,7 +101,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## 🦮 Getting Started
 
 Estas instruções irão te guiar para rodar uma cópia do projeto localmente, para fins de desenvolvimento e testes.
 (...)
@@ -126,7 +119,7 @@ Clone o repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/joao-montanari/portfolio.git
-cd seu-portfolio
+cd portfolio
 npm install
 # ou
 yarn install
@@ -137,7 +130,7 @@ yarn install
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## ✏️ Usage
 
 Para rodar o projeto em ambiente de desenvolvimento:
 ```bash
@@ -158,7 +151,7 @@ yarn storybook
 
 
 <!-- ROADMAP -->
-## Roadmap
+## 🗺️ Roadmap
 
 - [ ] Página de introdução com minha bio e skills.
 - [ ] Página de projetos com filtros e navegação.
@@ -187,7 +180,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request -->
 
-### Top contributors:
+## 😀 Top contributors:
 
 <a href="https://github.com/joao-montanari/portfolio/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=joao-montanari/portfolio" alt="contrib.rocks image" />
@@ -198,7 +191,7 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- LICENSE -->
-## License
+## 📖 License
 
 A distribuição não tem nenhuma licença. Veja `LICENSE.txt` para mais informações.
 
@@ -207,11 +200,11 @@ A distribuição não tem nenhuma licença. Veja `LICENSE.txt` para mais informa
 
 
 <!-- CONTACT -->
-## Contact
+## ☎️ Contact
 
 João Montanari - [@joaomontanari26](https://instagram.com/joaomontanari26)
 
-Project Link: [Repositório](https://github.com/joao-montanari/portfolio)
+Link do projeto: [Repositório](https://github.com/joao-montanari/portfolio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
