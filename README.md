@@ -119,7 +119,7 @@ Clone o repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/joao-montanari/portfolio.git
-cd seu-portfolio
+cd portfolio
 npm install
 # ou
 yarn install
