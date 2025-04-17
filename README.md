@@ -83,17 +83,10 @@ Ele foi pensado para ser uma vitrine do meu trabalho, com uma interface moderna 
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
-- ⚡ [Vite](https://vitejs.dev/) – Ferramenta de build rápida para front-end moderno.
-- ⚛️ [React](https://reactjs.org/) – Biblioteca para criação de interfaces.
-- 🎨 [Sass](https://sass-lang.com/) – Pré-processador CSS para estilos mais organizados.
-- 🧭 [React Router DOM](https://reactrouter.com/) – Navegação entre páginas.
-- 📚 [Storybook](https://storybook.js.org/) – Documentação de componentes de forma visual.
-- ✏️ [MUI](https://mui.com/material-ui/material-icons/) – Biblioteca para os ícones usados no projeto.
-
-* [![Sass][Sass]][Sass-url]
-* [![React][React.js]][React-url]
-* [![StoryBook][StoryBook]][story-book]
-* [![Vite][Vite]][vite-link]
+* [![Sass][Sass]][Sass-url] – Pré-processador CSS para estilos mais organizados.
+* [![React][React.js]][React-url] – Biblioteca para criação de interfaces.
+* [![StoryBook][StoryBook]][story-book] – Documentação de componentes de forma visual.
+* [![Vite][Vite]][vite-link] – Ferramenta de build rápida para front-end moderno.
 
 <!-- * [![Next][Next.js]][Next-url] -->
 <!-- * [![Vue][Vue.js]][Vue-url]
@@ -211,7 +204,7 @@ A distribuição não tem nenhuma licença. Veja `LICENSE.txt` para mais informa
 
 João Montanari - [@joaomontanari26](https://instagram.com/joaomontanari26)
 
-Project Link: [Repositório](https://github.com/joao-montanari/portfolio)
+Link do projeto: [Repositório](https://github.com/joao-montanari/portfolio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
