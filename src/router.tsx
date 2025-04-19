@@ -4,6 +4,7 @@ import DefaultLayout from "@Layouts/Default";
 
 import HomePage from "@Pages/Home";
 import PageNotFound from "@Pages/PageNotFound";
+import ProjectsPage from "@Pages/Projects";
 
 const routers = createHashRouter([
     {
@@ -14,7 +15,15 @@ const routers = createHashRouter([
             {
                 path: "/",
                 element: <HomePage/>
-            }
+            },
+            {
+                path: "/home",
+                element: <HomePage/>
+            },
+            {
+                path: "/projects",
+                element: <ProjectsPage/>
+            },
         ]
     }
 ]);
