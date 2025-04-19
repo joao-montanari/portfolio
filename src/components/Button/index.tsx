@@ -1,3 +1,4 @@
+import { SvgIcon } from '@mui/material';
 import './style.sass';
 
 export interface ButtonProps {
@@ -9,7 +10,7 @@ export interface ButtonProps {
     disabled?: boolean;
     design?: 'primary' | 'secondary' | 'tertiary' | 'fourth';
     type?: "button" | "submit" | "reset" | undefined;
-    icon?: string;
+    icon?: any;
 }
 
 const Button = ({
@@ -41,7 +42,10 @@ const Button = ({
         >
             {label}
             {
-                icon && <img src={icon} alt="button icon" />
+                icon && <SvgIcon 
+                    component={icon} 
+                    className='button-component-icon'
+                />
             }
         </button>
     )
