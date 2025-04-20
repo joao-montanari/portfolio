@@ -1,4 +1,5 @@
 import { GitHub, Language } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 
 import Button from '@Components/Button';
 import './style.sass';
@@ -9,23 +10,41 @@ export interface CardProps {
     repositoryUrl: string;
     siteUrl: string;
     image: string;
-    design?: 'primary'
+    technologies: string[];
+    design?: 'primary';
 }
 
-const Card = () => {
+const Card = ({
+    title,
+    description,
+    repositoryUrl,
+    siteUrl,
+    image,
+    technologies,
+    ...props
+}: CardProps) => {
+    const navigate = useNavigate();
+
     return (
-        <div className='card-component-container'>
+        <div className='card-component-container' {...props}>
             <div className='card-image-area'>
-                <img src="https://github.com/joao-montanari.png" alt="card image" />
+                <img src={image} alt="card image" />
             </div>
-            <div>
-                <div>
-                    <h3>Noisekun</h3>
+            <div className='card-component-content'>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <div className='card-component-technology-list'>
+                    {
+                        technologies.map((t, index) => (
+                            <div key={`tec-card-${index}`} className='tec-card-component'>
+                                {t}
+                            </div>
+                        ))
+                    }
                 </div>
-                <p>Website para ouvir combinações de sons para relaxar e se tornar mais produtivo nas suas tarefas.</p>
-                <div>
-                    <Button icon={GitHub} label='Source' onClick={() => {}}/>
-                    <Button icon={Language} label='Website' design='tertiary' onClick={() => {}}/>
+                <div className='card-component-btn-area'>
+                    <Button icon={GitHub} label='Repositório' onClick={() => navigate(repositoryUrl)}/>
+                    <Button icon={Language} label='Website' design='tertiary' onClick={() => navigate(siteUrl)}/>
                 </div>
             </div>
         </div>

@@ -17,3 +17,35 @@
             width: 100%
             height: 100%
             object-fit: cover
+    
+    .card-component-content
+        height: 60%
+        padding: 20px
+        position: relative
+
+        h3
+            margin-bottom: 14px
+
+        p
+            font-size: 14px
+            color: variables.$port-color-grey-light
+            padding-bottom: 16px
+    
+        .card-component-btn-area
+            display: flex
+            justify-content: center
+            gap: 20px
+            position: absolute
+            width: calc( 100% - 40px )
+            bottom: 20px
+
+        .card-component-technology-list
+            display: flex
+            gap: 8px
+
+            .tec-card-component
+                font-size: 12px
+                padding: 4px 8px
+                border-radius: 20px
+                color: variables.$port-color-text-white
+                background-color: variables.$port-color-grey-second
