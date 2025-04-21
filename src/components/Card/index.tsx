@@ -1,5 +1,6 @@
 import { GitHub, Language } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
+import React from 'react';
 
 import Button from '@Components/Button';
 import './style.sass';
@@ -12,6 +13,7 @@ export interface CardProps {
     image: string;
     technologies: string[];
     design?: 'primary';
+    style?: React.CSSProperties;
 }
 
 const Card = ({
@@ -21,12 +23,17 @@ const Card = ({
     siteUrl,
     image,
     technologies,
+    style,
     ...props
 }: CardProps) => {
     const navigate = useNavigate();
 
     return (
-        <div className='card-component-container' {...props}>
+        <div 
+            className='card-component-container' 
+            style={style} 
+            {...props}
+        >
             <div className='card-image-area'>
                 <img src={image} alt="card image" />
             </div>
@@ -43,7 +50,7 @@ const Card = ({
                     }
                 </div>
                 <div className='card-component-btn-area'>
-                    <Button icon={GitHub} label='Repositório' onClick={() => navigate(repositoryUrl)}/>
+                    <Button icon={GitHub} label='Código' onClick={() => navigate(repositoryUrl)}/>
                     <Button icon={Language} label='Website' design='tertiary' onClick={() => navigate(siteUrl)}/>
                 </div>
             </div>
