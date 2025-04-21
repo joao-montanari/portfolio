@@ -57,6 +57,7 @@ const ProjectsPage = () => {
                             repositoryUrl={proj.repositoryUrl}
                             siteUrl={proj.siteUrl}
                             technologies={proj.technologies}
+                            style={{ width: '100%', height: '90%' }}
                         />
                     ))
                 }
