@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Language, DataObject } from '@mui/icons-material';
 import { SvgIcon } from '@mui/material';
 
@@ -17,6 +17,7 @@ const links = [
 
 const Header = ({ design = 'primary' } : HeaderProps) => {
     const navigate = useNavigate();
+    const location = useLocation();
 
     return (
         <div 
@@ -35,6 +36,7 @@ const Header = ({ design = 'primary' } : HeaderProps) => {
                             design='secondary'
                             label={link.name}
                             onClick={() => navigate(link.url)}
+                            color={(location.pathname.indexOf(`${link.url}`) !== -1) ? 'white' : ''}
                         />
                     ))
                 }
