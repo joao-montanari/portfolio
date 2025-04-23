@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import React from 'react';
 
 import Button from '@Components/Button';
+import getIcon from '@Utils/map-icons';
 import './style.sass';
 
 export interface CardProps {
@@ -38,7 +39,20 @@ const Card = ({
                 <img src={image} alt="card image" />
             </div>
             <div className='card-component-content'>
-                <h3>{title}</h3>
+                <div className='header-card-area'>
+                    <h3>{title}</h3>
+                    <div className='point'/>
+                    {
+                        technologies.map((t, index) => (
+                            <img 
+                                key={`technology-card-icon-${index}`}
+                                src={getIcon(t)} 
+                                alt="card icon" 
+                                className='icons-card' 
+                            />
+                        ))
+                    }
+                </div>
                 <p>{description}</p>
                 <div className='card-component-technology-list'>
                     {
