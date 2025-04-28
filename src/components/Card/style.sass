@@ -18,7 +18,7 @@
             height: 100%
             object-fit: cover
     
-    .card-component-content
+    .card-component-content--primary
         height: 60%
         padding: 20px
         position: relative
@@ -66,3 +66,33 @@
 
                 .icons-card
                     width: 20px
+    
+    .card-component-content--secondary
+        padding: 20px
+
+        p
+            font-size: 14px
+            color: variables.$port-color-grey-light
+            padding-bottom: 16px
+
+        .header-card-area
+            display: flex
+            align-items: center
+            flex-direction: column
+
+            h3
+                font-size: 22px
+
+
+            .header-icons-area
+                margin-block: 14px
+
+                .icons-card
+                    width: 20px
+                    margin-right: 10px
+        
+        .card-component-btn-area
+            display: flex
+            justify-content: center
+            gap: 20px
+            margin-top: 10px 
