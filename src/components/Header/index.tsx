@@ -1,7 +1,9 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Language, DataObject } from '@mui/icons-material';
 import { SvgIcon } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
+import '@Root/i18n';
 import Button from '@Components/Button';
 import './style.sass';
 
@@ -10,14 +12,15 @@ export interface HeaderProps {
 }
 
 const links = [
-    { name: 'Início', url: '/home' },
-    { name: 'Projetos', url: '/projects' },
-    { name: 'Sobre mim', url: '/about-us' },
+    { name: 'header.home', url: '/home' },
+    { name: 'header.projects', url: '/projects' },
+    { name: 'header.about_me', url: '/about-us' },
 ]
 
 const Header = ({ design = 'primary' } : HeaderProps) => {
     const navigate = useNavigate();
     const location = useLocation();
+    const { t } = useTranslation();
 
     return (
         <div 
@@ -34,7 +37,7 @@ const Header = ({ design = 'primary' } : HeaderProps) => {
                     links.map((link) => (
                         <Button
                             design='secondary'
-                            label={link.name}
+                            label={t(link.name)}
                             onClick={() => navigate(link.url)}
                             color={(location.pathname.indexOf(`${link.url}`) !== -1) ? 'white' : ''}
                         />
