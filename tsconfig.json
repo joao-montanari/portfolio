@@ -28,6 +28,8 @@
       "@Models/*": ["./src/models/*"],
       "@Utils/*": ["./src/utils/*"],
       "@Layouts/*": ["./src/layouts/*"],
+      "@Public/*": ["./public/*"],
+      "@Root/*": ["./*"],
     },
   },
   "include": ["src"],
