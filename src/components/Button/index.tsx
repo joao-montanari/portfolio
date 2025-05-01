@@ -8,7 +8,7 @@ export interface ButtonProps {
     color?: string;
     backgroundColor?: string;
     disabled?: boolean;
-    design?: 'primary' | 'secondary' | 'tertiary' | 'fourth';
+    design?: 'primary' | 'secondary';
     type?: "button" | "submit" | "reset" | undefined;
     icon?: any;
 }
