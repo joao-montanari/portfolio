@@ -1,4 +1,7 @@
-import type { Preview } from '@storybook/react'
+import type { Preview } from '@storybook/react';
+import { themes } from '@storybook/theming';
+
+import '../src/styles/main.sass';
 
 const preview: Preview = {
   parameters: {
@@ -8,6 +11,9 @@ const preview: Preview = {
        date: /Date$/i,
       },
     },
+    docs: {
+      theme: themes.dark,
+    }  
   },
 };
 
